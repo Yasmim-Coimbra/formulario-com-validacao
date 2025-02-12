@@ -1,0 +1,41 @@
+@media (max-width: 808px) {
+    main {
+        flex-direction: column;
+        gap: 50px;
+        margin-block: 5%;
+    }
+    .texts {
+        text-align: center;
+    }
+    .texts h1 {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 630px) {
+    .form-box {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 485px) {
+    .form-box, .texts {
+        max-width: 350px;
+    }
+    .texts h1 {
+        font-size: 30px;
+    }
+    
+    .texts p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 366px) {
+    main {
+        gap: 35px;
+    }
+    .form-box, .texts {
+        max-width: 300px;
+    }
+}
