@@ -1,0 +1,94 @@
+body {
+    font-family: "Roboto", serif;
+    background: url(../images/bg-repeat.jpg) repeat 0 0/contain;
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3%;
+    gap: 5%;
+}
+
+.texts,
+button {
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    padding-inline: 15px;
+}
+
+.texts h1 {
+    font-weight: 900;
+    font-size: 40px;
+    padding-bottom: 12px;
+}
+
+.texts p {
+    max-width: 500px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.form-box {
+    width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-box form input, .form-box form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1.5px solid #000;
+    color: hsl(249, 10%, 26%);
+}
+
+.form-box form .campo-obrigatorio.invalido {
+    border: 1.5px solid #F52E2E;
+}
+.form-box form .campo-obrigatorio.valido {
+    border: 1.5px solid #00C22B;
+}
+
+.form-box form button {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-block: 20px;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+}
+
+.form-box form button:hover {
+    background-color: hsla(154, 59%, 51%, 0.7);
+}
+
+.form-box p.erro {
+    display: none;
+}
+.form-box p.erro.ativo {
+    display: block;
+    font-size: 10px;
+    color: #F52E2E;
+}
+
+.form-box p:not(.erro) {
+    font-size: 18px;
+}
