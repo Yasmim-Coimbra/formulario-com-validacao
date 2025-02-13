@@ -1,14 +1,13 @@
 camposObrigatorios = document.querySelectorAll(".campo-obrigatorio");
 btnEnviar = document.querySelector("button");
 mensagemErro = document.querySelectorAll(".erro");
-
 btnEnviar.addEventListener("click", function validarComBotao() {
     camposObrigatorios.forEach((campo, indexCampo) => {
         validarCampos(campo, indexCampo);
-    
-        if (camposObrigatorios[indexCampo].classList.contains("invalido")) {
+        
+        if (!camposObrigatorios[indexCampo].classList.contains("valido")) {
             btnEnviar.setAttribute("type", "button");
-        } else if(camposObrigatorios[indexCampo].classList.contains("valido")) {
+        } else if(!camposObrigatorios[indexCampo].classList.contains("invalido")) {
             btnEnviar.setAttribute("type", "submit");
         }
     });
