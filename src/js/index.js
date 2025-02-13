@@ -20,3 +20,12 @@ camposObrigatorios.forEach((campo, indexCampo) => {
         }
     });
 });
+
+function campoInvalido(campo) {
+    campo.classList.remove("valido");
+    campo.classList.add("invalido");
+}
+function campoValido(campo) {
+    campo.classList.remove("invalido");
+    campo.classList.add("valido");
+}
