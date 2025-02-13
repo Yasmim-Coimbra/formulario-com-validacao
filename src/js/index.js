@@ -5,9 +5,10 @@ mensagemErro = document.querySelectorAll(".erro");
 btnEnviar.addEventListener("click", function validarComBotao() {
     camposObrigatorios.forEach((campo, indexCampo) => {
         validarCampos(campo, indexCampo);
-        if (!campo.classList.contains("valido")) {
+    
+        if (camposObrigatorios[indexCampo].classList.contains("invalido")) {
             btnEnviar.setAttribute("type", "button");
-        } else if(!campo.classList.contains("invalido")) {
+        } else if(camposObrigatorios[indexCampo].classList.contains("valido")) {
             btnEnviar.setAttribute("type", "submit");
         }
     });
