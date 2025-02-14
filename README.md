@@ -28,3 +28,7 @@ javascript puro
 ## Aprendizado
 
 - Aprendi a manipular o evento de clique, de modo que seja possível fechar todos os outros itens ao clicar em uma pergunta
+
+## Preview do site
+
+![Preview Gif](./src/images/formulario-com-validacao-preview.gif)
