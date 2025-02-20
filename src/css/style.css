@@ -58,6 +58,7 @@ button {
     font-size: 16px;
     border: 1.5px solid #000;
     color: hsl(249, 10%, 26%);
+    resize: none;
 }
 
 .form-box form .campo-obrigatorio.invalido {
