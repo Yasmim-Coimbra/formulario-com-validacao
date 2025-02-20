@@ -27,7 +27,9 @@ javascript puro
 
 ## Aprendizado
 
-- Aprendi a manipular o evento de clique, de modo que seja possível fechar todos os outros itens ao clicar em uma pergunta
+- Aprendi a utilizar métodos como 'blur', 'trim()' e 'nextElementSibling'
+
+- Pratiquei o uso de métodos recorrentes como 'forEach', 'addEventListener' e 'preventDefault()'
 
 ## Preview do site
 
