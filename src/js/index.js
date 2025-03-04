@@ -4,16 +4,16 @@ btnEnviar = document.querySelector("button[type='submit']");
 btnEnviar.addEventListener("click", (event) => {
     event.preventDefault();
     
-    camposObrigatorios.forEach((input) => {
+    for (const input of camposObrigatorios) {
         validarCampos(input);
-    });
+    };
 });
 
-camposObrigatorios.forEach((input) => {
+for (const input of camposObrigatorios) {
     input.addEventListener("blur", () => {
         validarCampos(input);
     });
-});
+};
 
 function validarCampos(input) {
     if (input.value.trim()) {
